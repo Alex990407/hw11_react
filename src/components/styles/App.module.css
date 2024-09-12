@@ -1,5 +1,6 @@
 body {
   background: radial-gradient(circle, #ff7e5f, #feb47b);
+  padding: 10px;
 }
 
 .container {
@@ -8,11 +9,81 @@ body {
   justify-content: center;
   text-align: center;
   align-items: center;
-  margin-top: 10vh; /* Отступ сверху на 10% */
+  margin-top: 10vh;
   margin-left: 35%;
   padding: 10px;
   height: auto;
   width: 30%;
   border: 2px solid #fff;
   border-radius: 10px;
+}
+
+.appContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+/* 
+.nav {
+  background: radial-gradient(circle, #ff7e5f, #feb47b);
+  padding: 10px;
+  text-align: center;
+} */
+
+.nav {
+  position: absolute; /* Чтобы фиксировать его в углу */
+  top: 0;
+  left: 0;
+  padding: 10px;
+  border: none;
+  background: radial-gradient(circle, #ff7e5f, #feb47b);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тень для красоты */
+}
+
+/* .contentContainer {
+  display: flex;
+  flex-grow: 1;
+  position: relative;
+} */
+
+.contentContainer {
+  display: flex;
+  justify-content: center; /* Центрирование по горизонтали */
+  align-items: center; /* Центрирование по вертикали */
+  flex-grow: 1; /* Занимаем оставшееся пространство */
+}
+
+/* ArticleList в правом верхнем углу */
+/* .articleListContainer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 200px;
+  padding: 20px;
+  background: radial-gradient(circle, #ff7e5f, #feb47b);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+} */
+
+.articleListContainer {
+  max-width: 600px;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Централизованный Article */
+.articleContainer {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.articleContainer > * {
+  max-width: 600px;
+  width: 100%;
 }
