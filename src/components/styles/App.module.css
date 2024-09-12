@@ -1,0 +1,18 @@
+body {
+  background: radial-gradient(circle, #ff7e5f, #feb47b);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin-top: 10vh; /* Отступ сверху на 10% */
+  margin-left: 35%;
+  padding: 10px;
+  height: auto;
+  width: 30%;
+  border: 2px solid #fff;
+  border-radius: 10px;
+}

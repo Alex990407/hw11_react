@@ -1,0 +1,9 @@
+li {
+  font-family: Arial, sans-serif; /* Шрифт для элементов списка */
+  font-size: 16px; /* Размер шрифта */
+  font-weight: bold;
+  color: #f0e5e5; /* Цвет текста */
+  margin-bottom: 10px; /* Отступ между пунктами */
+  padding-left: 20px; /* Внутренний отступ от маркера */
+  line-height: 1.5; /* Межстрочный интервал */
+}
